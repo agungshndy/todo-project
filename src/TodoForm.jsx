@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react"
 
+
 function TodoForm({ onSubmit }){
     const [newItem, setNewItem] = useState("")
 
@@ -14,18 +15,22 @@ function TodoForm({ onSubmit }){
   }
 
   return (
+
+    <>
     <form onSubmit={handleSubmit} className="new-item-form">
-      <div className="form-row">
-        <label htmlFor="item">New Item</label>
+      <div className="form-row items-center justify-items-center">
+        <label htmlFor="item" className="block text-xl mb-2">New Item</label>
         <input
           value={newItem}
           onChange={e => setNewItem(e.target.value)}
           type="text"
-          id="item"
+          id="item" 
+          className="w-auto rounded-md mb-2 block"
         />
+        <button className="btn">Add</button>
       </div>
-      <button className="btn">Add</button>
     </form>
+    </>
   )
 }
 
