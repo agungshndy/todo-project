@@ -2,7 +2,7 @@ function Header() {
 
     return (
         <div className='justify-items-center'>
-            <h1 className='text-3xl font-medium m-5'>Todo List App</h1>
+            <h1 className='text-5xl font-medium mt-3 mb-7'>Todo List App</h1>
         </div>
     )
 }

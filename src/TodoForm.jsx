@@ -19,7 +19,7 @@ function TodoForm({ onSubmit }){
     <>
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row items-center justify-items-center">
-        <label htmlFor="item" className="block text-xl mb-2">New Item</label>
+        <label htmlFor="item" className="block text-3xl m-3">New Item</label>
         <input
           value={newItem}
           onChange={e => setNewItem(e.target.value)}
@@ -27,7 +27,7 @@ function TodoForm({ onSubmit }){
           id="item" 
           className="w-auto rounded-md mb-2 block"
         />
-        <button className="btn">Add</button>
+        <button className="btn btn-accent">Add</button>
       </div>
     </form>
     </>
