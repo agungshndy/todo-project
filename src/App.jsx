@@ -48,7 +48,6 @@ function App() {
     <>
       <Header/>
       <TodoForm onSubmit={addTodo} />
-      <h1 className="header">Todo List</h1>
       <Note todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </>
   )
